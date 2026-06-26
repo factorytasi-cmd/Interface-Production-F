@@ -154,6 +154,11 @@
       border: 0.5px solid rgba(55, 138, 221, 0.22);
     }
 
+    .card-absen {
+      background: rgba(230, 126, 34, 0.1);
+      border: 0.5px solid rgba(230, 126, 34, 0.22);
+    }
+
     .card-inner {
       padding: 20px;
     }
@@ -176,6 +181,29 @@
 
     .badge-opj { background: rgba(29,158,117,0.15); color: #0A5C42; }
     .badge-issue { background: rgba(55,138,221,0.15); color: #134E8A; }
+    .badge-absen { background: rgba(230,126,34,0.15); color: #7D3A0A; }
+
+    .icon-opj { background: rgba(29,158,117,0.15); }
+    .icon-issue { background: rgba(55,138,221,0.15); }
+    .icon-absen { background: rgba(230,126,34,0.15); }
+
+    .btn-opj {
+      background: rgba(29,158,117,0.1);
+      color: #0A5C42;
+      border-color: rgba(29,158,117,0.3);
+    }
+
+    .btn-issue {
+      background: rgba(55,138,221,0.1);
+      color: #134E8A;
+      border-color: rgba(55,138,221,0.3);
+    }
+
+    .btn-absen {
+      background: rgba(230,126,34,0.1);
+      color: #7D3A0A;
+      border-color: rgba(230,126,34,0.3);
+    }
 
     .card-icon-wrap {
       width: 38px;
@@ -185,9 +213,6 @@
       align-items: center;
       justify-content: center;
     }
-
-    .icon-opj { background: rgba(29,158,117,0.15); }
-    .icon-issue { background: rgba(55,138,221,0.15); }
 
     .card-title {
       font-size: 22px;
@@ -317,6 +342,28 @@
       <div class="section-lbl">Input Data Produksi</div>
 
       <div class="cards">
+        <a class="card card-absen" href="https://factorytasi-cmd.github.io/Absensi-Factory/" target="_blank" rel="noopener">
+          <div class="card-inner">
+            <div class="card-top">
+              <span class="card-badge badge-absen">Harian</span>
+              <div class="card-icon-wrap icon-absen">
+                <i class="ti ti-users" style="font-size:20px;color:#E67E22"></i>
+              </div>
+            </div>
+            <div class="card-title">Absensi Operator</div>
+            <div class="card-desc">Catat kehadiran operator sewing setiap hari per line produksi</div>
+            <div class="card-footer">
+              <span class="card-hint">
+                <i class="ti ti-user-check" style="font-size:13px"></i>
+                Input tiap hari
+              </span>
+              <span class="card-btn btn-absen">
+                Buka <i class="ti ti-arrow-right" style="font-size:14px"></i>
+              </span>
+            </div>
+          </div>
+        </a>
+
         <a class="card card-opj" href="https://factorytasi-cmd.github.io/Output-Per-Jam-Sewing/" target="_blank" rel="noopener">
           <div class="card-inner">
             <div class="card-top">
